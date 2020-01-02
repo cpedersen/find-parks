@@ -21,7 +21,6 @@ function displayResults(queryPark, queryStates, queryMax, responseJson) {
   $('#results-list').empty();
 
   if (queryMax < responseJson.total) {
-    const num_items = queryMax;
     $('#results-list').append(`<p>${queryMax} parks found using query '${queryPark}'</p>`);
   } else {
     $('#results-list').append(`<p>${responseJson.total} parks found using query '${queryPark}'</p>`);
