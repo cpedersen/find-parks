@@ -6,8 +6,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-button, input[type="text"] {
+button, input[type="text"], input[type="number"] {
   padding: 5px;
+  font-size: 1em;
+  background-color: #F5F5F5;
 }
 
 button:hover {
@@ -39,4 +41,16 @@ li, img {
 
 .hidden {
   display: none;
+}
+
+#submit {  
+  border: 1px solid black;
+  padding: 1% 2% 1% 2%;
+  border-radius: 25px;
+  font-size: 1em;
+  outline: none;
+}
+
+#submit:focus {
+  background-color: darkgray;
 }

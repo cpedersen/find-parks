@@ -14,21 +14,21 @@
 
         <form id="js-form">
             <p>
-            <label for="search-parks">National Park</label>
+            <label for="search-parks">National Park:</label>
             <input type="text" name="search-parks" value="Trail of Tears" id="js-search-parks" required>
             </p>
 
             <p>
-            <label for="specify-states">States</label>
-            <input type="text" name="specify-states" value="AL,AR,GA" id="js-specify-states" required>
+            <label for="specify-states">States:</label>
+            <input type="text" name="specify-states" value="AR, OK" id="js-specify-states" required>
             </p>
 
             <p>
-            <label for="specify-max">Max Results</label>
-            <input type="text" name="specify-max" value="10" id="js-specify-max" required>
+            <label for="specify-max">Max Results:</label>
+            <input type="number" name="specify-max" min="1" max="1000" value="1" id="js-specify-max" required>
             </p>
 
-            <input type="submit" value="Start Search!">
+            <input id="submit" type="submit" value="Start Search!">
         </form>
 
         <p id="js-error-message" class="error-message"></p>
